@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box; 
+}
+
+html{
+    height: 100%;    
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    background: #EAF4F6;
+     font-family: sans-serif;
+}
+
+.main-container{
+    display: grid;
+    height:100%;  
+    grid-template-columns: 100%;  
+    grid-template-rows: 100% 20% 50% 30% 30%;
+    grid-template-areas: "header"
+                         "product"
+                         "offering"
+                         "awards"
+                         "footer";    
+}
+
+.header-container{
+    grid-area: header;
+    height: 100%;    
+    background:url("images/skyline-header.jpeg") center/cover no-repeat border-box;  
+    display: grid;
+    grid-template-columns: 85%;  
+    grid-template-rows: 12% 88%;
+    grid-template-areas: "header-nav"
+                         "header-content";
+    justify-content: center
+}
+
+.header-nav-container{
+    grid-area: header-nav;
+    width: 100%;
+    height: 100%;     
+    font-size: 1.2rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.header-logo{        
+    height: 100%;
+    width: 25%;
+    background:url("images/clear-logo.png") center/cover no-repeat border-box,#2C3263;  
+}
+
+.header-nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 72%;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 85%;
+    text-align: center
+    
+}
+
+.header-nav-options{
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    margin: 0; 
+    justify-content: space-between;
+}
+
+ul.header-nav-options{    
+    list-style-type: none;
+    margin: 0; 
+    justify-content: space-between;    
+}
+
+.header-nav-options li a{ 
+    
+    text-decoration: none;    
+    color:black;
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav-login{
+
+}
+
+.header-content-container{
+    grid-area: header-content;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title-one{
+    text-align: center;
+    font-size: 1.6rem;
+    width:50%;
+}
+
+
+
+
+
+
+.product-container{
+    grid-area: product;
+    height: 100%;
+    background: black;    
+}
+
+.offering-container{
+    grid-area: offering;
+    height: 100%;
+    background: red;    
+}
+
+.awards-container{
+    grid-area: awards;
+    height: 100%;
+    background: orange;    
+}
+
+.footer-container{
+    grid-area: footer;
+    height: 100%;
+    background: green;    
+}
+
